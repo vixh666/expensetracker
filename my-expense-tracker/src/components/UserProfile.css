@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://plus.unsplash.com/premium_photo-1661774987792-17a95638d874?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+  background-size: cover;
+  color: white; /* Default text color */
+}
+
+/* Style for the form container */
+.form-container {
+  max-width: 600px;
+  margin: 50px auto; /* Center horizontally and add margin on top and bottom */
+  padding: 20px;
+  background: #000; /* Solid black background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adjust shadow for better contrast */
+  font-family: 'Arial', sans-serif;
+  color: #fff; /* White text color for contrast */
+  position: relative; /* Allows for positioning child elements */
+}
+
+/* Adjust forms' position */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  background: #000; /* Solid black background for the form */
+  padding: 10px;
+  border-radius: 10px; /* Match the form's border radius */
+  position: relative;
+  left: -10px; /* Adjust this value to move the form slightly to the left */
+}
+
+/* Adjust the margin for the password update form */
+.password-update-form {
+  margin-top: 20px;
+  position: relative;
+  left: -10px; /* Adjust this value to move the password update form slightly to the left */
+}
+
+/* Feedback message styling */
+.message {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #333; /* Dark background for messages */
+  color: #fff; /* White text color */
+  border: 1px solid #444; /* Dark border */
+  border-radius: 5px;
+  text-align: center;
+  width: 100%; /* Full width for messages */
+}
+
+/* Specific styling for password update message */
+.password-update-message {
+  background-color: #444; /* Slightly lighter dark background */
+  color: #fff; /* White text color */
+  border: 1px solid #555; /* Slightly lighter border */
+}
+
+/* Header styling */
+h2 {
+  text-align: center;
+  color: #fff; /* White text color for heading */
+  margin-bottom: 20px;
+  font-size: 1.5rem; /* Slightly larger font size for the heading */
+}
+
+/* Form label styling */
+form label {
+  margin-bottom: 5px;
+  color: #fff; /* White text color for labels */
+  font-weight: bold;
+}
+
+/* Input and textarea styling */
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #333; /* Dark border to match black background */
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #fff; /* White text color for inputs */
+  background: #222; /* Dark gray background for inputs */
+  width: 100%; /* Ensure inputs take full width */
+}
+
+/* Placeholder text color */
+form input::placeholder,
+form textarea::placeholder {
+  color: #aaa; /* Light gray color for placeholders for better contrast */
+}
+
+/* Input and textarea focus styles */
+form input:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Ensure button takes full width of the container */
+}
+
+.password-update-form button {
+  margin-top: -25px; /* Adjust this value to move the button upwards */
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+form button:active {
+  background-color: #004080;
+}

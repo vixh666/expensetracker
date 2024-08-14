@@ -1,0 +1,206 @@
+/* Overall container styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://plus.unsplash.com/premium_photo-1681497591056-f1b2f008e418?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+/* Add a gradient overlay for better text visibility */
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* Main content area styling */
+.home-content {
+  text-align: center;
+  margin-top: 80px;
+  background-color: rgba(30, 30, 30, 0.9);
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 800px;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Header styling */
+.header {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #ede8e7;
+}
+
+/* Centered input-box styling */
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Form groups for inputs */
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group label {
+  width: 120px;
+  text-align: right;
+  font-weight: bold;
+  color: white;
+}
+
+.input-field {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #87CEEB;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.input-field:focus {
+  border-color: #00FF7F;
+  box-shadow: 0 0 8px rgba(0, 255, 127, 0.6);
+  outline: none;
+  transform: scale(1.03);
+}
+
+.button {
+  padding: 12px 25px;
+  background-color: #6A5ACD;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #483D8B;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(72, 61, 139, 0.6);
+}
+
+.button:active {
+  background-color: #36358c;
+}
+
+/* Table styling */
+.table-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+table, th, td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  transition: background-color 0.3s;
+  color: #FFF;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #FF4500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #DC143C;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(220, 20, 60, 0.6);
+}
+
+.delete-btn:active {
+  background-color: #b22222;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+ }
+ }
+ .time-container {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+/* src/components/Home.css */
+.pie-chart-container {
+  width: 300px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  margin: 0 auto; /* Center the chart horizontally if needed */
+  margin-bottom: 10px;
+}

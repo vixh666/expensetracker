@@ -1,0 +1,38 @@
+.welcome-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1710492341412-8b3aee7e70a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGV4cGVuc2V8ZW58MHx8MHx8fDA%3D') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+  
+  .welcome-message {
+    background: rgba(0, 0, 0, 0.6); /* Darker semi-transparent background */
+    padding: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  .welcome-message h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity:1;
+}
+}
